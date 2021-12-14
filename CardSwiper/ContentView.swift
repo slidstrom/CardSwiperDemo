@@ -21,8 +21,7 @@ struct ContentView: View {
                     
                     ZStack{
                         Rectangle().frame(width: geo.size.width * (4/5), height: geo.size.height * (7/8), alignment: .center).foregroundColor(Color(.sRGB, red: Double.random(in: 0..<1), green: Double.random(in: 0..<1), blue: Double.random(in: 0..<1), opacity: 0.5)).cornerRadius(20).shadow(radius: 10)
-                        Image(systemName: "circle.dashed").resizable().frame(width: geo.size.width/2, height: geo.size.height/2)
-                        Text(String(index + 1)).font(.headline)
+                        Image(systemName: "\(index).circle").resizable().frame(width: geo.size.width/2, height: geo.size.height/2)
                     }
                     
                 }
